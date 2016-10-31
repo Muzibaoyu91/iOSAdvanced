@@ -1,0 +1,16 @@
+//
+//  Prefix.pch
+//  LocalNotification
+//
+//  Created by long on 16/3/4.
+//  Copyright © 2016年 long. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#define kNotificationCategoryIdentifile @"kNotificationCategoryIdentifile" 
+#define kNotificationActionIdentifileStar @"kNotificationActionIdentifileStar"
+#define kNotificationActionIdentifileComment @"kNotificationActionIdentifileComment"
+
+#endif /* Prefix_pch */

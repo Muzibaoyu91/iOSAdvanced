@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ckh-Dl-H1a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6bt-qe-QkV">
+            <objects>
+                <navigationController id="ckh-Dl-H1a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gi8-oo-eF0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aEW-Lr-zpu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5M-aE-BcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="337"/>
+        </scene>
+        <!--LocalNotification-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnL-CT-pws">
+                                <rect key="frame" x="211" y="156" width="179" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="QG4-li-XWQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="faR-ky-BOh"/>
+                                </constraints>
+                                <state key="normal" title="send local notification"/>
+                                <connections>
+                                    <action selector="btnSendLocalNotification_Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYc-H2-vEg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pF8-9z-D8q">
+                                <rect key="frame" x="211" y="226" width="179" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="Ry1-0L-lGX"/>
+                                    <constraint firstAttribute="height" constant="30" id="y8L-LM-v55"/>
+                                </constraints>
+                                <state key="normal" title="cancel send"/>
+                                <connections>
+                                    <action selector="btnCancelSend_Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ph-9T-9Ck"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dnL-CT-pws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Qr-x1-YrI"/>
+                            <constraint firstItem="pF8-9z-D8q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BIA-Pe-co4"/>
+                            <constraint firstItem="pF8-9z-D8q" firstAttribute="top" secondItem="dnL-CT-pws" secondAttribute="bottom" constant="40" id="QfX-EY-jwg"/>
+                            <constraint firstItem="dnL-CT-pws" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="xir-iu-73F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LocalNotification" id="JCe-tf-W26"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+    </scenes>
+</document>
